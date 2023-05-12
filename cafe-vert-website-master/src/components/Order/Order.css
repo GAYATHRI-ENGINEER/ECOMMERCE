@@ -1,0 +1,122 @@
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 120px 5% 50px 5%;
+  box-shadow: inset 0px 0px 24px -5px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.order-left {
+  flex-basis: 50%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-left-price {
+  position: relative;
+  z-index: 5;
+  font-size: 24px;
+  text-align: center;
+  color: #242424;
+  margin: 30px 0;
+}
+
+.order-left-image{
+  position: relative;
+  text-align: center;
+}
+.order-left-image > img {
+  width: 40%;
+  margin: 0px 70px;
+  min-width: 140px;
+  position: relative;
+  z-index: 1;
+}
+
+.two-selected::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background: url(../../components/Section3/images/prod.png) no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  filter: blur(2px);
+  bottom: 25px;
+}
+.two-selected::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 50px;
+  width: 50%;
+  height: 130%;
+  background: url(../../components/Section3/images/prod.png) no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  filter: blur(2px);
+  bottom: 30px;
+}
+
+.three-selected::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 50px;
+  width: 50%;
+  height: 120%;
+  background: url(../../components/Section3/images/prod.png) no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  filter: blur(2px);
+  bottom: 0px;
+}
+.four-selected::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 50px;
+  width: 50%;
+  height: 120%;
+  background: url(../../components/Section3/images/prod.png) no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  filter: blur(2px);
+  bottom: 0px;
+}
+.four-selected::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 80px;
+  width: 40%;
+  height: 90%;
+  background: url(../../components/Section3/images/prod.png) no-repeat center;
+  background-size: auto;
+  background-size: contain;
+  filter: blur(2px);
+  bottom: 30px;
+}
+
+.order-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 25%;
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+.order-right > div {
+  width: 100%;
+}
+
+.order-select-container {
+  margin-bottom: 20px;
+}

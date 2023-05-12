@@ -1,0 +1,10 @@
+
+.section3{
+  background: url(images/bg_03.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 30px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}

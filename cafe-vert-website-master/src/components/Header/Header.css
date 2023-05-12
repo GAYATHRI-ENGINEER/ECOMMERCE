@@ -1,0 +1,134 @@
+.menu{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-container{
+  display: block;
+  overflow: hidden;
+}
+
+.menu-animation-enter{
+  height:0px
+}
+.menu-animation-enter.menu-animation-enter-active{
+  height:300px;
+  transition: all 200ms ease-in;
+}
+
+.menu-animation-exit{
+  height:300px;
+}
+
+.menu-animation-exit.menu-animation-exit-active{
+  height:0px;
+  transition: all 200ms ease-out;
+}
+
+.menu-item{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 20px;
+  height: 80px;
+  font-size: 0.8em;
+  text-align: center;
+  color: #b6b2b0;
+  cursor: pointer;
+  background: #342f2b;
+  background: linear-gradient(135deg, #342f2b 0%, #3d3832 100%);
+}
+
+.menu-item b{
+  display: block;
+  color: #fff;
+}
+.logo-box{
+  position: relative;
+  font-size: 1.8em;
+  padding-left: 50px;
+  border-bottom-left-radius: 10px;
+}
+.logo-box b{
+  display: inline-block;
+  position: relative;
+}
+.logo-box b::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0px;
+  width: 23px;
+  height: 33px;
+  background: url("logo.png") no-repeat center;
+      background-size: auto;
+  background-size: cover;
+}
+.menu-order-btn{
+  position: relative;
+  height: 80px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #000;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #8bbc44;
+}
+
+.menu-order-btn::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  height: 0;
+  width: 0;
+  border-bottom: 80px solid #8bbc44;
+  border-left: 15px solid transparent;
+  border-right: 0 solid transparent;
+}
+
+
+.nav-toggle{
+  width: 65%;
+  cursor: pointer;
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #1b2b57;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+.brown-bg{
+  background: linear-gradient(135deg, #342f2b 0%, #3d3832 100%);
+}
+.nav-toggle>div{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+.nav-toggle>div>i{
+  display: block;
+  height: 4px;
+  width: 25px;
+  margin: 0 0 3px;
+  background: #7bb820;
+}
+
+
+@media screen and (max-width: 1080px){
+  .logo-box{
+    border-bottom-left-radius: 0;
+  }
+  .menu-item{
+    display: block;
+    width: 65%;
+    height: 100%;
+  }
+}
+

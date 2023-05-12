@@ -1,0 +1,150 @@
+.product-form {
+  flex-basis: 30%;
+  flex-grow: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form:hover {
+  box-shadow: 0 0 0px 6px #4db20c4d;
+  width: 160px;
+}
+
+.pf-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pf-title {
+  direction: rtl;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: #212121;
+}
+
+.pf-pay {
+  position: relative;
+  font-size: 1em;
+  color: #9e9e9e;
+}
+
+.pf-pay > div {
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 5px;
+}
+
+.pf-pay > div::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 16px;
+  height: 22px;
+  background: url(images/logo_sm.png) no-repeat center;
+  background-size: cover;
+}
+
+.green-rounded {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 15px;
+  background: #4db20c;
+}
+
+.pf-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.7em;
+  position: relative;
+}
+.pf-picture {
+  z-index: 4;
+}
+.pf-picture > img {
+  width: 180px;
+}
+
+.two-products::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 120px;
+  height: 90px;
+  background: url(images/prod.png) no-repeat center;
+  background-size: contain;
+  filter: blur(2px);
+}
+.two-products::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 120px;
+  height: 90px;
+  background: url(images/prod.png) no-repeat center;
+  background-size: contain;
+  filter: blur(2px);
+}
+.three-products {
+  align-self: flex-start;
+}
+.three-products::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 120px;
+  height: 90px;
+  background: url(images/prod.png) no-repeat center;
+  background-size: contain;
+  filter: blur(2px);
+}
+
+.three-products > img {
+  width: 100% !important;
+  max-width: 300px;
+}
+
+.pf-body > b {
+  margin: 15px 0;
+}
+.pf-body >b >span {
+  font-size: 0.7em;
+  color: #4db20c;
+  font-style: italic;
+}
+
+.order-button-form {
+  min-width: 150px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff !important;
+  font-size: 25px;
+  font-family: "Harmattan", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  transition: 0.3s;
+  text-decoration: none;
+  background: linear-gradient(180deg, #ff6600 0%, #c44409 80%);
+  border: none;
+  border-bottom: 5px solid #722501;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+.order-button-form:hover {
+  box-shadow: 0 0 0px 6px rgba(255, 255, 255, 0.6);
+  min-width: 160px;
+}

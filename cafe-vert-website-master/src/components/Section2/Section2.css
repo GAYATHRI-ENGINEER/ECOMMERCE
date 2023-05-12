@@ -1,0 +1,26 @@
+
+.section2{
+  z-index: -1;
+  padding: 30px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2>div{
+  flex-basis: 25%;
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px 50px;
+  min-width: 200px;
+}
+.section2 h3{
+  font-size: 16px;
+}
+
+.section2 p{
+  font-size: 14px;
+  margin: 15px;
+}

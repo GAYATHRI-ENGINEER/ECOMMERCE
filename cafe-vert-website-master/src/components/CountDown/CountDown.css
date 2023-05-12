@@ -1,0 +1,90 @@
+.countdown-section {
+  flex-basis: 100%;
+}
+.countdown-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1em;
+  color: #4db20c;
+  font-style: italic;
+}
+
+.countdown-container {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  perspective: 150px;
+  perspective-origin: center;
+  font-size: 2.3em;
+}
+
+.upper-part,
+.bottom-part {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.upper-part {
+  background: #76e614;
+  border-bottom: solid 1px #a2f559;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  align-items: flex-end;
+}
+.bottom-part {
+  background: #6ac619;
+  border-bottom: solid 1px #2e570b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: flex-start;
+}
+.upper-part>span{
+  padding: 0px 20px;
+  transform: translateY(50%);
+}
+.bottom-part > span {
+  padding: 0px 20px;
+  transform: translateY(-50%);
+}
+
+
+.absolute-positioned{
+  position: absolute;
+}
+.upper-animation{
+  animation: upper-animation-keys 500ms;
+  animation-timing-function: linear;
+}
+.bottom-animation{
+  animation: bottom-animation-keys 500ms;
+  animation-timing-function: linear;
+}
+@keyframes upper-animation-keys {
+  0% {
+    transform: rotateX(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  100% {
+    transform: rotateX(-90deg);
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes bottom-animation-keys {
+  0% {
+    transform: rotateX(90deg);
+    transform-origin: 50% 0%;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: 50% 0%;
+  }
+}

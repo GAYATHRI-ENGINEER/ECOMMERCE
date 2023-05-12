@@ -1,0 +1,73 @@
+.mCarousel-bg {
+  background: linear-gradient(
+    to bottom,
+    #1f1f1f 0%,
+    #1f1f1f 60%,
+    #ffffff 60%,
+    #1f1f1f 60%,
+    #ffffff 60%,
+    #ffffff 100%
+  );
+  padding: 40px 5%;
+  overflow: hidden;
+}
+.mCarousel-item{
+  position: relative;
+  margin: auto;
+  width: 274px;
+}
+.mCarousel-item-phone{
+}
+.mCarousel-item-coms{
+  overflow: auto;
+  width: 227px;
+  height: 311px;
+  position: absolute;
+  left: 28px;
+  top: 118px;
+}
+.mCarousel-item-coms>img{
+width: 100%;
+}
+
+.comment-container{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.comment-avatar{
+  flex-basis: 20%;
+}
+.comment-avatar>img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.comment-text{
+  flex-basis: 70%;
+}
+
+.comment-text>b{
+  padding-inline-end: 8px;
+  margin: 0;
+  color: #0968a1;
+  font-size: 12px;
+line-height: 1.2;
+display: inline;
+}
+.comment-text>p{
+  margin: 0;
+  font-size: 12px;
+line-height: 1.2;
+text-align: right;
+color: #333333;
+display: inline;
+}
+.comment-text>i{
+  margin: 0;
+  font-size: 11px;
+font-weight: 300;
+color: #bfbfbf;
+margin-top: 15px;
+display: block;
+}

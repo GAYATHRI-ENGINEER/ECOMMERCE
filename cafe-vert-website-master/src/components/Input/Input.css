@@ -1,0 +1,39 @@
+.input-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 20px 0px;
+}
+.perso-input-text, input[type='text']{
+    flex-basis: 100%;
+    padding: 10px 10px 10px 8px;
+    border: 1px solid #6ac619;
+    border-radius: 5px;
+    color: #6ac619;
+    font-size: 13px;
+    background-color: #281d14;
+    direction: rtl;
+}
+.perso-input-text:focus, input[type='text']:focus{
+    box-shadow: 0px 0px 1px 2px #6ac61985;
+    border: 1px solid #6ac619;
+    outline: #281d14;
+}
+.input-icon{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+}
+.error-style{
+    color: #f33201;
+    box-shadow: 0px 0px 1px 2px #f3320189 !important;
+    border: 1px solid #f33201 !important;
+}
+.input-error-text{
+    direction: rtl;
+    color: #f33201;
+    margin: 5px 8px 0 0;
+    font-size: 0.8em;
+}
